@@ -1,0 +1,95 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20210603195826
+Username: LAPTOP-2LL316K7\Lenovo
+RunAs User: LAPTOP-2LL316K7\Lenovo
+Configuration Name: 
+Machine: LAPTOP-2LL316K7 (Microsoft Windows NT 10.0.19041.0)
+Host Application: C:\Windows\system32\WindowsPowerShell\v1.0\PowerShell_ISE.exe
+Process ID: 3332
+PSVersion: 5.1.19041.906
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.906
+BuildVersion: 10.0.19041.906
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\mahesh01\mahi
+PS C:\Users\Lenovo> Get-Date
+
+03 June 2021 19:58:30
+
+
+PS C:\Users\Lenovo> Add-Content -Value "this is mahesh from kodad" -Path C:\divya\deepu
+PS C:\Users\Lenovo> set-content -Value "completed btech in 2016 " -Path C:\divya\deepu
+PS C:\Users\Lenovo> TerminatingError(): "The pipeline has been stopped."
+PS C:\Users\Lenovo> TerminatingError(): "The pipeline has been stopped."
+PS C:\Users\Lenovo> Copy-Item -Path C:\divya\deepu |*-destination C:\devi\mahesh
+*-destination : The term '*-destination' is not recognized as the name of a cmdlet, function, script file, or operable 
+program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:33
++ Copy-Item -Path C:\divya\deepu |*-destination C:\devi\mahesh
++                                 ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (*-destination:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+*-destination : The term '*-destination' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the
+path is correct and try again.
+At line:1 char:33
++ Copy-Item -Path C:\divya\deepu |*-destination C:\devi\mahesh
++                                 ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (*-destination:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\Lenovo> Copy-Item -Path C:\divya\deepu \*-destination C:\devi\mahesh
+>> TerminatingError(Copy-Item): "A positional parameter cannot be found that accepts argument 'C:\devi\mahesh'."
+Copy-Item : A positional parameter cannot be found that accepts argument 'C:\devi\mahesh'.
+At line:1 char:1
++ Copy-Item -Path C:\divya\deepu \*-destination C:\devi\mahesh
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Copy-Item], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.CopyItemCommand
+Copy-Item : A positional parameter cannot be found that accepts argument 'C:\devi\mahesh'.
+At line:1 char:1
++ Copy-Item -Path C:\divya\deepu \*-destination C:\devi\mahesh
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Copy-Item], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.CopyItemCommand
+
+PS C:\Users\Lenovo> Copy-Item -Path C:\divya\deepu |*-destination| C:\devi\mahesh
+*-destination : The term '*-destination' is not recognized as the name of a cmdlet, function, script file, or operable 
+program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:33
++ Copy-Item -Path C:\divya\deepu |*-destination| C:\devi\mahesh
++                                 ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (*-destination:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+*-destination : The term '*-destination' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the
+path is correct and try again.
+At line:1 char:33
++ Copy-Item -Path C:\divya\deepu |*-destination| C:\devi\mahesh
++                                 ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (*-destination:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\Lenovo> Copy-Item -Path C:\divya\deepu |*destination| C:\devi\mahesh
+*destination : The term '*destination' is not recognized as the name of a cmdlet, function, script file, or operable 
+program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:33
++ Copy-Item -Path C:\divya\deepu |*destination| C:\devi\mahesh
++                                 ~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (*destination:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+*destination : The term '*destination' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the
+path is correct and try again.
+At line:1 char:33
++ Copy-Item -Path C:\divya\deepu |*destination| C:\devi\mahesh
++                                 ~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (*destination:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+**********************
+Windows PowerShell transcript end
+End time: 20210603203204
+**********************
